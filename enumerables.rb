@@ -12,8 +12,10 @@ end
 # given an array of spicy foods, **return an array of strings**
 # with the names of each spicy food
 def get_names(spicy_foods)
-  # your code here
+  spicy_foods.map {|food| food[:name]}
 end
+
+# binding.pry
 
 # given an array of spicy foods, **return an array of hashes** 
 # where the heat level of the food is greater than 5
